@@ -3,7 +3,7 @@
 import pyvista as pv
 import numpy as np
 
-def plot_volume(Xg, Yg, Zg, Rg, opacity=0.4, cmap="viridis"):
+def plot_volume(Xg, Yg, Zg, Rg, points=None, opacity=0.4, cmap="viridis"):
     """
     Visualizes a 3D structured volume using PyVista.StructuredGrid.
 
@@ -30,4 +30,9 @@ def plot_volume(Xg, Yg, Zg, Rg, opacity=0.4, cmap="viridis"):
     # Plot
     plotter = pv.Plotter()
     plotter.add_mesh(grid, scalars="Radioactivity", cmap=cmap, opacity=opacity, show_scalar_bar=True)
+
+    if points is not None:
+        cloud = pv.PolyData(points)
+        plotter.add_points(cloud, color="red", point_size=5, render_points_as_spheres=True)
+
     plotter.show()
