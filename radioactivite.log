@@ -1,0 +1,12 @@
+2025-08-04 22:49:53,200 [INFO] Début du programme
+2025-08-04 22:49:53,200 [INFO] Chargement des données depuis : /Users/msc/Documents/WORK/2025-2026/GEOPS/RADIO3D/data/data.csv
+2025-08-04 22:49:53,203 [INFO] 758 lignes chargées.
+2025-08-04 22:49:53,203 [INFO] Prévisualisation des premières lignes :
+2025-08-04 22:49:53,208 [INFO] 
+           X           Y       Z      R
+0  533435.86  4840334.50  154.09  230.0
+1  533435.72  4840334.39  154.03  230.0
+2  533435.66  4840333.99  154.06  210.0
+3  533435.61  4840334.12  153.93  230.0
+4  533435.96  4840334.57  153.87  250.0
+2025-08-04 22:49:53,208 [INFO] Fin du chargement des données
